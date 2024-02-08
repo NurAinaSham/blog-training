@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('article', function(Blueprint $table) {
+        Schema::table('socialMedia', function(Blueprint $table) {
             $table->string('about');
         });
     }
