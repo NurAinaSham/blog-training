@@ -143,6 +143,9 @@
                     SELAMAT DATANG {{ strtoupper(Auth::user()->name) }}
                 </p>
             @else
+                @if(Auth::check())
+                <a class="py-2 d-none d-md-inline-block" href="{{ route('index') }}">Admin</a>
+                 @endif
                 <a class="py-2 d-none d-md-inline-block" href="{{ route('login') }}">Log Masuk</a>
             @endif
 
